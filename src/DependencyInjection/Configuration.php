@@ -18,9 +18,9 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('sms-content-bundle');
 
-        $treeBuilder->root('cmf_content')
+        $treeBuilder->getRootNode()
             ->children()
                 ->scalarNode('default_template')->end()
                 ->arrayNode('persistence')
