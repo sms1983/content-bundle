@@ -13,7 +13,7 @@ namespace Symfony\Cmf\Bundle\ContentBundle\Controller;
 
 use FOS\RestBundle\View\View;
 use FOS\RestBundle\View\ViewHandlerInterface;
-use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
+use Setono\PhpTemplates\Engine\EngineInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
