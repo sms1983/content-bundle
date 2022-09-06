@@ -112,12 +112,8 @@ class ContentController
             return $this->viewHandler->handle($view);
         }
 
-        if (is_null($this->templating)) {
-            $response = new Response();
-            $response->setContent($this->twig->render($contentTemplate, $params));
-        } else {
-            $response = $this->templating->renderResponse($contentTemplate, $params);
-        }
+        $response = new Response();
+        $response->setContent($this->twig->render($contentTemplate, $params));
 
         return $response;
     }
